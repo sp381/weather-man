@@ -8,23 +8,31 @@
     <title>Weather Man</title>
 </head>
 <body class="min-100-vh flex-column bg-light">
-    //create a header for the Dashboard
+    <!--create a header for the Dashboard -->
     <header class="p-5 text-center">
         <h1>Weather Dashboard</h1>
     </header>
-    //header ends
+    <!-- header ends -->
 
-    //search for city contianer to the left of the page
-    <main class="search-container" id="city-search">
-        <h2 class="title" id="title-city">
-            Search for a City
-        </h2>
-        <div type="text" class="search-text-box"></div>
-        <button class="search-btn">Search></button>
-        
+    <!-- search for city container to the left of the page -->
+    <main> 
+        <div> 
+            <div class="search">
+                <h2 class="search-header">Search for a City</h2>
+                <form id="user-form" class="search-body">
+                    <input name="username" type="text" class="form-input" id="city-search"></input>
+                    <button type="submit" class="btn">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <div> 
+            <h2 class="subtitle">Show Weather For: <span id="search-city"></span></h2>
+            <div id="container" class="weather-group">    
+            </div>
+        </div>
     </main>
 
-    
-</body>
 <script src="./assets/script.js"></script>
+</body>
 </html>
