@@ -29,7 +29,9 @@ var formSearchHandler = function(event) {
                //' <img src="..." class="card-img-top" alt="...">' +
               '  <div class="card-body">' +
                 '  <h5 class="card-title">' + data.name + '</h5>' +
-                   '<p class="card-text">'+ data.main.temp + '</p>' +
+                   '<p class="card-text">'+ 'Temp: ' + data.main.temp + ' F' + '</p>' +
+                   '<p class="card-text">'+ 'Humidity: ' + data.main.humidity + '</p>' +
+                   '<p class="card-text">'+ 'Wind: ' + data.wind.speed + ' MPH' + '</p>' +
                   //'<a href="#" class="btn btn-primary">Go somewhere</a>' +
                ' </div>' +
               '</div>')      
