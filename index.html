@@ -14,6 +14,9 @@
     <!--create a header for the Dashboard -->
     <header class="p-5 text-center">
         <h1>Weather Dashboard</h1>
+        <input class="date" type="container" id="currentDate"></input>
+        <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+
     </header>
     <!-- header ends -->
 
@@ -32,13 +35,14 @@
         <ul class="list-group">
             
         </ul>
-        <div class="card current-card"> 
-            <h2 class="card-body">Current Weather: <span id="city-weather"></span></h2>
+        <div class="card"> 
+            <h2 class="current-card">Current Weather for: <span id="city-weather"></span></h2>
             <div id="card" class="weather-current"></div>
         </div>
+
         <div class="card five-day-card"> 
-            <h2 class="card-body">Five Day Forecast: <span id="city-weather"></span></h2>
-            <div id="card" class="weather-five-day"></div>
+            <h2 class="card-body-five">Five Day Forecast: <span id="weather-five-day"></span></h2>
+            <div id="card-five" class="weather-five-day"></div>
         </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -47,6 +51,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="./assets/script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>

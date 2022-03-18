@@ -4,6 +4,16 @@ var cardEl = document.querySelector("#cardEl");
 var cityWeather = document.querySelector("#city-weather");
 var APIkey = "57b955f106e5397ac471f500b09676b2";
 var cityURL = "https://api.openweathermap.org/data/2.5/weather?q=";
+var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=";
+
+//Gather the current date and time
+const m = moment();
+console.log(m.toString());
+
+var today = new Date();
+var date = moment().format('MMMM Do YYYY, h:mm:ss a');
+ document.getElementById("currentDate").value = date;
+//End of Moment.js
 
 var formSearchHandler = function(event) {
     //prevent page from refreshing
@@ -35,7 +45,6 @@ var formSearchHandler = function(event) {
                   //'<a href="#" class="btn btn-primary">Go somewhere</a>' +
                ' </div>' +
               '</div>')      
-                //TODO loop over data in a for loop and render items
                 //TODO save data that reps the city into local storage
             });
     };    
