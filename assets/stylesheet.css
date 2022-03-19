@@ -9,21 +9,42 @@
     flex-wrap: wrap;
   }  
   .card {
-    padding-left: 5%;
+    padding-left: 0%;
   }
   .card-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: italic;
-    text-align:justify
+    text-align: center;
+    padding-left: 0; 
   
   }
 
+  .card-title-h5 {
+    text-align: left;
+  }
+
   .card-text {
+    font-size: large;
+    margin: 0%;
+  }
+
+  .card-body-five {
+    font-style: italic;
     font-size: 1.5rem;
-    margin: 5%;
   }
 
   .current-card {
-    font-weight: bold;
-    font-size: 2rem;
+    font-style: italic;
+    font-size: 1.5rem;
   }
+
+  .card-time {
+    font-size: 1.5rem;
+  }
+
+  .city-name {
+    font-style:normal;
+    font-size: larger;
+    text-align: left;
+  }
+
